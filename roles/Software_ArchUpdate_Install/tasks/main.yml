@@ -3,8 +3,20 @@
     repo: https://aur.archlinux.org/arch-update.git
     dest: /tmp/arch-update/
 
-- name: Run 'install' target as root
-  community.general.make:
-    chdir: /tmp/arch-update/
-    target: install
-  become: true
+- name: Make and install Arch-Update
+  become: yes
+  become_user: builduser
+  when: _package_installed.stdout == "
+  shell: cd /tmp/arch-update/ && makepkg -rsi --noconfirm
+
+- name: Remove temporary build directory
+  file:
+    state: absent
+    path: "{{ _tempdir.path }}"
+
+
+#- name: Run 'install' target as root
+#  community.general.make:
+#    chdir: /tmp/arch-update/
+#    target: install
+#  become: true
