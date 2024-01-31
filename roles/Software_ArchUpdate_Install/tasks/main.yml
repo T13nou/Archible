@@ -1,6 +1,6 @@
 - name: Clone Arch-Update repository
   git:
-    repo: https://github.com/Antiz96/arch-update.git
+    repo: https://aur.archlinux.org/arch-update.git
     dest: /tmp/arch-update/
 
 - name: Run 'install' target as root
