@@ -21,6 +21,13 @@ users:
     home: /home/elsa
     createhome: yes  # Créer le répertoire home
 
+    
+  - name: builduser
+    password: $6$DrBEAmX81LwH8l2X$jyG0.Fl3pGxiE9Ja7Bi/JD3ue/.7lj/6NLXjRUV0jK.Fgaw/F8gFWBJvChZgEbyBnGGOovpgF1Qv5QtofZ/ib0
+    comment: builduser
+    home: /home/elsa
+    createhome: no  # Créer le répertoire home
+
 ########################################################################################################"
 # "Network_Shares" variable must be defined to be used in role NFS_Mount
 # name: describes your share
