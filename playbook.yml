@@ -5,34 +5,36 @@
   ##### Ansible debug & requirements #####
     - Ansible_Facts
     - Ansible_Dependancies
+
+    - Software_ArchUpdate_Install
   
   ##### Drivers #####
-    - Drivers_Bluetooth
-    - Drivers_AMD
-    - System_Update # Necessary following Mesa-kisak installation un Debian/Ubuntu
+#    - Drivers_Bluetooth
+#    - Drivers_AMD
+#    - System_Update # Necessary following Mesa-kisak installation un Debian/Ubuntu
 
   ##### System updates and base software #####
 #    - Software_Base_Install
-    - Flatpak_Core
-    - Software_My_Applications
-    - Software_My_Flatpaks
+#    - Flatpak_Core
+#    - Software_My_Applications
+#    - Software_My_Flatpaks
 
   ##### User environment #####
-    - Share_Mount
-    - Users_Create
-    - Users_Faces
-    - Users_KDE_Theme_Restore
+#    - Share_Mount
+#    - Users_Create
+#    - Users_Faces
+#    - Users_KDE_Theme_Restore
   
   ##### Tweaks #####
-    - Tweak_Game_Compatibility
-    - Tweak_Neofetch_Customization
-    - Tweak_NumLock_On
-    - Tweak_PackageMgr_Customization
+#    - Tweak_Game_Compatibility
+#    - Tweak_Neofetch_Customization
+#    - Tweak_NumLock_On
+#    - Tweak_PackageMgr_Customization
 
   ##### Softwares #####
-    - Software_Fish_Install
-    - Software_Floorp_Install
-    - Software_KDE_Install
+#    - Software_Fish_Install
+#    - Software_Floorp_Install
+#    - Software_KDE_Install
 
     
 
