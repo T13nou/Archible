@@ -6,7 +6,6 @@
 - name: Make and install Arch-Update
   become: yes
   become_user: builduser
-  when: _package_installed.stdout == "
   shell: cd /tmp/arch-update/ && makepkg -rsi --noconfirm
 
 - name: Remove temporary build directory
