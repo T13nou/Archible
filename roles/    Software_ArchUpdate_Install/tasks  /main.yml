@@ -1,0 +1,10 @@
+- name: Clone Arch-Update repository
+  git:
+    repo: https://github.com/Antiz96/arch-update.git
+    dest: /tmp/arch-update/
+
+- name: Run 'install' target as root
+  community.general.make:
+    chdir: /tmp/arch-update/
+    target: install
+  become: true
